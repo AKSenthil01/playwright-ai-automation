@@ -1,5 +1,6 @@
 export class AIAnalyzer {
   private static readonly OLLAMA_URL =
+    process.env.OLLAMA_URL ??
     'http://localhost:11434/api/generate';
 
   private static readonly MODEL = 'qwen2.5:3b';
